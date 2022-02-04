@@ -72,5 +72,9 @@ public class MainManager : MonoBehaviour
     {
         m_GameOver = true;
         GameOverText.SetActive(true);
+        if (m_Points > DataManagerS.instance.score)
+        {
+        DataManagerS.instance.score = m_Points;
+        }
     }
 }

@@ -5,6 +5,9 @@ using UnityEngine;
 public class DataManagerS : MonoBehaviour
 {
     public static DataManagerS instance;
+    public string playerName;
+    public int score;
+
     void Awake()
     {
       if (instance != null)

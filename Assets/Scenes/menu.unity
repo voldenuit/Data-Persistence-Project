@@ -332,6 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 860448691a04d4eab91a8be03ca59eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNameInputField: {fileID: 1375938179}
 --- !u!1 &844235292
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,7 +558,7 @@ GameObject:
   - component: {fileID: 1375938180}
   - component: {fileID: 1375938179}
   m_Layer: 5
-  m_Name: Name InputField
+  m_Name: PlayerNameInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -912,6 +913,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 185721398}
+        m_TargetAssemblyTypeName: UIManagerS, Assembly-CSharp
+        m_MethodName: SetName
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1459979295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1203,6 +1216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cfe11a4941eb4fa6be981067bdd15a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: 
 --- !u!4 &1880743770
 Transform:
   m_ObjectHideFlags: 0
