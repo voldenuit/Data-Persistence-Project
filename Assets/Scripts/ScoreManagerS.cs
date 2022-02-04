@@ -8,7 +8,7 @@ public class ScoreManagerS : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LoadName();
+        LoadNameAndScore();
     }
 
     // Update is called once per frame
@@ -17,11 +17,11 @@ public class ScoreManagerS : MonoBehaviour
         
     }
 
-    public void LoadName()
+    public void LoadNameAndScore()
     {
-      if (!(DataManagerS.instance.score == 0))
+      if (!(DataManagerS.instance.bestScore == 0))
       {
-      gameObject.GetComponent<Text>().text = "Best Score: " + DataManagerS.instance.playerName + ": " + DataManagerS.instance.score;
+      gameObject.GetComponent<Text>().text = "Best Score: " + DataManagerS.instance.bestPlayerName + ": " + DataManagerS.instance.bestScore;
       }
     }
 
